@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweetheart Catcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1 class="title">Sweetheart Catcher</h1>
+      <div class="stats" aria-live="polite">
+        <div class="stat">Score: <span id="score">0</span></div>
+        <div class="stat">Time: <span id="timer">30</span>s</div>
+      </div>
+    </header>
+    <p class="hint">Use ◀︎ ▶︎ or swipe to move the bow and catch the falling hearts.</p>
+    <div class="game-area" id="gameArea" aria-live="polite">
+      <div class="player" id="player" aria-label="Bow catcher" role="img"></div>
+      <div class="message hidden" id="message"></div>
+    </div>
+    <button class="start-button" id="startButton">Start the sweetness</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
